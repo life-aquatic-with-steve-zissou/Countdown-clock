@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Game_Timer</title>
+    <link rel="stylesheet" href="Game_Timer.css">
 </head>
 <body>
-    <div>You have <span id="time">02:00</span> minutes left!
+    <div class="topTimer">
+        <div class="timerText bounce">You have <span id="time">02:00</span> minutes left!
+        </div>
     </div>
     <script>
         function startTimer(duration, display) {
