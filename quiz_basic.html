@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="quiz">    </div>
+
+    <button id="submit">submit quiz</button>
+    <div id="results"></div>
+
+
+<script>
+    var quizDiv = document.getElementById("quiz");
+    var resultsDiv = document.getElementById("results");
+    var submit = document.getElementById("submit");
+
+    var questions = [
+        {
+            question: "What is your favorite color?",
+            answers: {
+                a: "red",
+                b: "blue",
+                c: "idk"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "what is your quest?",
+            answers: {
+                a: "glory",
+                b: "to graduate codeup",
+                c: "To find the holy grail"
+            },
+            correctAnswer: "c"
+        },
+        {
+            question: "what is the average velocity of an unladen swallow?",
+            answers: {
+                a: "20 mph",
+                b: "50kph",
+                c: "666 mph",
+                d: "African or European?"
+            },
+            correctAnswer: "d"
+        }
+    ];
+
+    function quiz() {
+        var output = [];
+
+        questions.forEach(
+            (currentQuestion, questionNumber) => {
+                var answers = [];
+
+                for (letter in currentQuestion.answers) {
+                    answers.push(
+                        `<label>
+                        <input type="radio" name="question${questionNumber}" value="${letter}">
+                        ${letter} :
+                        ${currentQuestion.answers[letter]}
+                        </label>`
+                    );
+                }
+                output.push(`<div class="question"> ${currentQuestion.question}</div>
+                <div class="answers">${answers.join('')}</div>`
+                );
+            }
+
+        );
+
+
+
+        quizDiv.innerHTML = output.join('');
+    }
+
+    function results() {
+
+    }
+
+    quiz();
+
+    submit.addEventListener('click', results())
+
+</script>
+</body>
+</html>
