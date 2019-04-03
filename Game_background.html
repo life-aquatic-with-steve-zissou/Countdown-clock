@@ -2,9 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>GameBackground</title>
+    <style>
+        main{
+            width:2000px;
+            height: 2000px;
+        }
+        .gameArea{
+            position: relative;
+            top: 20%;
+            height: 75%;
+            width: 100%;
+            background-color: deepskyblue;
+        }
+        .mountain{
+            position: absolute;
+            top: 34%;
+            height: 66%;
+            width: 100%;
+            background-image: url("Mountain.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .clouds{
+            position: absolute;
+            height: 30%;
+            width: 40%;
+            background-image: url("clouds.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+        }
+        .right{
+            right: 10%;
+            transform: scaleX(-1);
+            z-index: 1;
+        }
+        .birds{
+            height: 20%;
+            width: 30%;
+            z-index: 3;
+            transform: scaleX(-1);
+        }
+        .fly{
+            animation:fly 5s linear 500;
+        }
+        @keyframes fly{
+            0%{
+                transform:translate(2000px,0px) scale(5);
+            }
+            25%{
+                transform:translate(1600px,0px) scale(4);
+            }
+            50%{
+                transform:translate(1200px,0px) scale(3);
+            }
+            75%{
+                transform:translate(800px,0px) scale(2);
+            }
+            100% {
+                transform: translate(400px, 0px) scale(1);
+            }
+        }
+
+        </style>
 </head>
 <body>
-$END$
+    <main>
+        <div class="gameArea">
+            <div class="mountain">
+            </div>
+            <div class="clouds">
+            </div>
+            <div class="clouds right">
+            </div>
+            <div class="birds fly">
+                <img src="birds.gif" alt="birds">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
