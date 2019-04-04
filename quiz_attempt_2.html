@@ -85,7 +85,7 @@
 
     console.log(headers);
 
-    function loadQuestion(){
+    function loadQuestion(){ //called by init() on line 224 which is called onload
         //reset the html after each button click
         questionWrapper.innerHTML = '';
        /* creates div within which the question and answers will be placed*/
@@ -135,8 +135,8 @@
         questionWrapper.appendChild(content);
     }
 
-    function endText(){
-
+    function endText(){  //called on 213 within check answers once questionsCounter === allQuestions.length -1 (-1 meaning that it's the last question)
+        /*after quiz ends*/
         var scoreText = document.createTextNode('You scored ' + numCorrect + ' out of ' + allQuestions.length);
         var p1 = document.createElement('p');
         var p2 = document.createElement('p');
@@ -149,7 +149,7 @@
         buttonContainer.innerHTML = '';
         buttonContainer.appendChild(startOverButton);
 
-        function getWrongAnswers(){
+        function getWrongAnswers(){ //called within endText() if numCorrect !== allQuestions.length lines 173 & 179
             for(var i = 0; i < wrongAnswerArray.length; i++){
                 //grab the value from the array index
                 var wrongAnswerVal = wrongAnswerArray[i].valueOf();
@@ -216,7 +216,7 @@
             progressBar();
         }
         else if(isChecked === false){
-            window.alert('In order to climb the mountain you must first take a step and answer a question');
+            window.alert('In order to climb the mountain you must first take a step and answer this question');
         }
     }
 
