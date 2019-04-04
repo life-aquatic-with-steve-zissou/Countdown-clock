@@ -31,7 +31,7 @@
         },
         {
             question: 'What input type is most appropriate for a password input?',
-            choices: ['text', 'email', 'password', 'button'],
+            choices: ['text', 'email', 'password', 'button', 'in the trash'],
             correctAnswer:2,
             answerText: 'password'
         },
@@ -100,21 +100,21 @@
         /*places each question */
         questionLabel.innerHTML = allQuestions[questionCounter].question;
 
-        //create unordered list to store choices
+        /* creates an unordered list for radio button answers -need to list style none*/
         var choicesList = document.createElement('ul');
         content.appendChild(choicesList);
-
+/* This iterates through allQuestions (question/answer array) generating li with radio inputs questionCounter determines which question we are on*/
         for(var i = 0; i < allQuestions[questionCounter].choices.length; i++){
-            //create list item
+
             var listItem = document.createElement('li');
 
             var spanRadio = document.createElement('span');
             spanRadio.className = 'radio';
             var spanValue = document.createElement('span');
             spanValue.className = 'radio-value';
-            //create the radio button
+
             var radioButton = document.createElement('input');
-            //attach attributes to the radio button
+            /* adds attributes to li. id uses the i value*/
             radioButton.type = 'radio';
             radioButton.id = 'choice' + '-' +  i;
             radioButton.name = 'answer-choice';
@@ -122,13 +122,13 @@
             //create the content label
             var contentLabel = document.createElement('label');
             var choiceText = document.createTextNode(allQuestions[questionCounter].choices[i]);
-
-            choicesList.appendChild(listItem);
-            listItem.appendChild(contentLabel);
-            contentLabel.appendChild(spanRadio);
-            spanRadio.appendChild(radioButton);
-            spanRadio.appendChild(spanValue);
-            contentLabel.appendChild(choiceText);
+            /*The above determines what to place inside the ul, below actually accomplishes it*/
+            choicesList.appendChild(listItem); // choicesList declared 104
+            listItem.appendChild(contentLabel); // listItem declared declared 109
+            contentLabel.appendChild(spanRadio);// contentLabel declared declared 123
+            spanRadio.appendChild(radioButton);// declared 111
+            spanRadio.appendChild(spanValue); //spanValue declared 114
+            contentLabel.appendChild(choiceText); //declared 123&124
         }
         //content.insertBefore(questionLabel, content.nextSibling);
         //append the content div to the question wrapper
@@ -136,6 +136,7 @@
     }
 
     function endText(){
+
         var scoreText = document.createTextNode('You scored ' + numCorrect + ' out of ' + allQuestions.length);
         var p1 = document.createElement('p');
         var p2 = document.createElement('p');
