@@ -1,0 +1,16 @@
+
+body{
+    background-color: white;
+}
+.mountain img{
+    height: 80%;
+    width: 100%;
+    position:relative;
+
+
+}
+
+.canvas{
+    background-color: deepskyblue;
+
+}

@@ -28,14 +28,25 @@
             height: 100%;
             width: 100%;
         }
-        .clouds{
-            position: absolute;
-            height: 30%;
-            width: 40%;
-            z-index: 1;
+        .left{
+            height: 50%;
+            width: 70%;
+            right: 31%;
+            z-index: 10;
+
         }
         .right{
+            height: 30%;
+            width: 50%;
+            bottom: 65%;
+            right: -2%;
             z-index: 0;
+            transform: scaleX(-1);
+        }
+        .clouds{
+            position: absolute;
+        }
+
         }
         .right img{
             position: absolute;
@@ -51,23 +62,26 @@
             transform: scaleX(-1);
         }
         .fly{
-            animation:fly 5s linear 500;
+            animation:fly 15s linear 60;
         }
         @keyframes fly{
             0%{
                 transform:translate(2000px,0px) scale(5);
             }
-            25%{
-                transform:translate(1600px,0px) scale(4);
+            10%{
+                transform:translate(1600px, 0px) scale(4);
             }
-            50%{
+            20%{
                 transform:translate(1200px,0px) scale(3);
             }
-            75%{
+            30%{
                 transform:translate(800px,0px) scale(2);
             }
-            100% {
+            40% {
                 transform: translate(400px, 0px) scale(1);
+            }
+            50% {
+                transform: translate(200px, 0px) scale(0);
             }
         }
 
@@ -78,7 +92,7 @@
         <div class="gameArea">
             <div class="mountain">
             </div>
-            <div class="clouds">
+            <div class="clouds left">
                 <img src="clouds.png" alt="leftCloud">
             </div>
             <div class="clouds right">
