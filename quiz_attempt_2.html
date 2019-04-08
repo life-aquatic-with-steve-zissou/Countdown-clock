@@ -21,6 +21,8 @@
 
 <script>
 
+    var myArray = ['bob', 'joe', 'johnson', 37];
+
     /* Makes an array with questions stored as objects(?) */
     var allQuestions = [
         {
@@ -46,6 +48,39 @@
             choices: ['var', 'const', 'let', 'char'],
             correctAnswer:1,
             answerText: 'const'
+        },
+        {
+            question: 'What can be added to ensure that the cursor is inside an input on pageload?',
+            choices: ['focus', 'class="focus', 'autofocus', 'All of the Above'],
+            correctAnswer:2,
+            answerText: 'autofocus'
+        }
+    ];
+
+    var allQuestions2 = [
+        {
+            question: 'What is your favorite color?',
+            choices: ['red', 'blue', 'orange', 'idk'],
+            correctAnswer:0,
+            answerText: 'red'
+        },
+        {
+            question: 'what is the average velocity of an unladen swallow?',
+            choices: ['20 kph', '40 mph', 'african or european?', 'button', 'in the trash'],
+            correctAnswer:2,
+            answerText: 'african or european?'
+        },
+        {
+            question: 'What is your quest?',
+            choices: ['the holy grail', 'idk', 'blue', 'red'],
+            correctAnswer:0,
+            answerText: 'GET'
+        },
+        {
+            question: 'why?',
+            choices: ['because', 'why not?', 'idk', 'idc'],
+            correctAnswer:1,
+            answerText: 'why not?'
         },
         {
             question: 'What can be added to ensure that the cursor is inside an input on pageload?',
@@ -220,14 +255,14 @@
         }
     }
 
-    //app init
-    function init(){
+
+    function init(){ //begins function, called on 248
         buttonContainer.appendChild(button);
         loadQuestion();
     }
 
     startOverButton.onclick = function(){
-        //reset vars and flush HTML
+        /* resets the counters and wrong answers, restarts quiz html */
         questionCounter = 0;
         numCorrect = 0;
         wrongAnswerArray = [];
@@ -236,7 +271,7 @@
         init();
     };
 
-    button.onclick = function(){
+    button.onclick = function(){  //
         checkAnswer();
         if(questionCounter < allQuestions.length){
             loadQuestion();
@@ -244,7 +279,7 @@
     };
 
     //init the app after window load
-    window.onLoad = init();
+    window.onLoad = init();  //begins quiz on pageload
 </script>
 </body>
 </html>
