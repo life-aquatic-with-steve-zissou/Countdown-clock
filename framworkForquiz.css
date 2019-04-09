@@ -1,16 +1,43 @@
 
 body{
-    background-color: white;
+    background-color: darkslategrey;
 }
 .mountain img{
     height: 80%;
     width: 100%;
     position:relative;
-
-
 }
 
 .canvas{
     background-color: deepskyblue;
 
+}
+.clock-font{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+}
+
+.count_down_bar{
+    border: solid white 2px;
+    background-color: red;
+    width: 75%;
+}
+.countdown-text{
+    margin-left: 40%;
+    padding-top: 1%;
+}
+.player-lives{
+    padding-left: 1%;
+    margin-left: 5%;
+    color: white;
+    font-size: 2rem;
+    width: 15%;
+    position: absolute;
+    top: 10%;
+}
+.player-lives img{
+    margin-left: 5%;
+    height: 30%;
+    width: 30%;
+    padding-bottom: 9%;
 }
