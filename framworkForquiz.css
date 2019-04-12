@@ -40,4 +40,6 @@ body{
 .topTimer{
     font-family: 'Orbitron', sans-serif;
     font-size: 5rem;
+    border: 1px deepskyblue solid;
+    margin-bottom: 2%;
 }

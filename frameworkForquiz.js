@@ -1,3 +1,5 @@
+//this is the function
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -19,4 +21,5 @@ window.onload = function () {
     var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
     startTimer(twoMinutes, display);
+
 };
