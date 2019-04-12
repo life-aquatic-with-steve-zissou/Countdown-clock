@@ -1,4 +1,4 @@
-//this is the function
+//this is the function for the countdown clock
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
@@ -12,14 +12,29 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            timer = 0;
         }
     }, 1000);
 }
+function move() {
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 1200);
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+    }
 
-window.onload = function () {
+
+};
+onclick = function () {
     var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
     startTimer(twoMinutes, display);
-
 };
+
+

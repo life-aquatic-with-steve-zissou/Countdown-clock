@@ -28,8 +28,12 @@
         </div>
         <!--countdown bar below-->
         <div class="row count_down_bar mx-auto text-center">
-            <p class="countdown-text">countdown bar</p>
+            <div id="myProgress">
+                <div id="myBar"></div>
+            </div>
         </div>
+        <br>
+        <button id="gameStart" class="btn btn-primary" onclick="startTimer(); move(); this.disabled = true;">Start Game</button>
     </div>
 
     <!-- This div is for the animated character and game enviorment -->
