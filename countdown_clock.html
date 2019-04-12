@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Countdown Clock</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="framworkForquiz.css">
+    <!-- font for timer -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Quiz Project</title>
 </head>
 <body>
+
+<!-- This section is for the game title -->
+
+<h1 class="bg-primary text-white text-center mb-0">Life Aquatic Project</h1>
+
+<!-- The parent div below is the container that will hold the count down timer and bar -->
+
+<div class="Countdown bg-dark text-center text-white w-100  mb-0 p-3">
+    <!--timer goes under here make sure to rename class to clock-font if element changes -->
+    <h1 class="clock-font text-white mb-0">05 : 00</h1>
+    <!--countdown bar below-->
+    <div class="row count_down_bar mx-auto text-center">
+        <p class="countdown-text">countdown bar</p>
+    </div>
+</div>
+
+<!-- This div is for the animated character and game enviorment -->
+
+<div class="canvas mx-5 mt-0">
+    <div class="player-lives">
+        3/3 <img src="https://cdn3.iconfinder.com/data/icons/line/36/person_add-512.png" alt="life">
+    </div>
+    <div class="mountain">
+        <img src="Mountain.png" alt="Mountain"/>
+    </div>
+</div>
+
+<!-- This bottom half will contain the quiz questions -->
+
+<div class="bottom bg-primary text-white text-center">
+
+    <div id="wrapper">
+        <div class="container">
+            <h1></h1>
+            <div id="progress-container"></div>
+            <div id="question-wrapper"></div>
+            <div id="button-container"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
 
 
 
