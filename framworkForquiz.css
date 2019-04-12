@@ -12,10 +12,7 @@ body{
     background-color: deepskyblue;
 
 }
-.clock-font{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
-}
+
 
 .count_down_bar{
     border: solid white 2px;
@@ -39,4 +36,8 @@ body{
     height: 30%;
     width: 30%;
     padding-bottom: 9%;
+}
+.topTimer{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
 }
