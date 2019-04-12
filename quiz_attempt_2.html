@@ -17,6 +17,8 @@
     </div>
 </div>
 
+<img id="myimage" src="../codeup_web_exercises/img/codeup-arrow.png" alt="">
+
 
 
 <script>
@@ -270,9 +272,26 @@
         progress.style.width = 0 + '%';
         init();
     };
+    var flippedImage = false;
+
+    function rotateImage() {
+        if (flippedImage === false) {
+            var img = document.getElementById('myimage');
+            img.style.transform = 'rotate(180deg)';
+            return flippedImage = true;
+
+        } else if (flippedImage === true) {
+            var img = document.getElementById('myimage');
+            img.style.transform = 'rotate(180deg)';
+            return flippedImage = false;
+        }
+    }
+
 
     button.onclick = function(){  //
-        checkAnswer();
+        checkAnswer(); /// that shit happens here
+        rotateImage()
+
         if(questionCounter < allQuestions.length){
             loadQuestion();
         }
