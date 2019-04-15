@@ -28,9 +28,8 @@ function move() {
             elem.style.width = width + '%';
         }
     }
+}
 
-
-};
 onclick = function () {
     var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
