@@ -9,7 +9,8 @@ body{
 }
 
 .canvas{
-    background-color: deepskyblue;
+    background-color: white;
+    border: solid deepskyblue 1px;
 
 }
 .Countdown{
