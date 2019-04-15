@@ -3,6 +3,12 @@ var user = prompt("Enter your name");
 var playerName = document.getElementById('player');
 playerName.innerHTML = user;
 
+var resetbtn = document.getElementById('restart');
+
+resetbtn.addEventListener('click',function () {
+    location.reload();
+},false);
+
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
@@ -38,5 +44,6 @@ onclick = function () {
         display = document.querySelector('#time');
     startTimer(twoMinutes, display);
 };
+
 
 
