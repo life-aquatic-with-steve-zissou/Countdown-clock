@@ -17,7 +17,7 @@
 
     <!-- This section is for the game title -->
 
-    <h1 class="bg-primary text-white text-center mb-0">Life Aquatic Project</h1>
+    <h1 class="bg-primary text-white text-center mb-0">Quiz Game Name Here</h1>
 
     <!-- The parent div below is the container that will hold the count down timer and bar -->
 
@@ -36,7 +36,7 @@
         <button id="gameStart" class="btn btn-lg btn-primary" onclick="startTimer(); move(); this.disabled = true;">Start Game</button>
     </div>
 
-    <!-- This div is for the animated character and game enviorment -->
+    <!-- This div is for the animated character and game environment -->
 
     <div class="canvas mx-5 mt-0">
         <!--<div class="player-lives">
@@ -55,9 +55,21 @@
         </div>
     </div>
     <!--The divs below are just for styling and are the boxes in the Countdown bar-->
-    <div class="box-left shadow-lg"></div>
-    <div class="box-center shadow-lg"></div>
-    <div class="box-right shadow-lg"></div>
+    <div class="box-left shadow-lg">
+        <p>Lives</p>
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <p class="pt-2">
+            <span id="totalLives">3</span>/3
+        </p>
+    </div>
+    <div class="box-center shadow-lg">
+
+    </div>
+    <div class="box-right shadow-lg">
+
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
