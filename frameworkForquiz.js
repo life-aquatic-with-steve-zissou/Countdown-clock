@@ -1,4 +1,7 @@
 //this is the function for the countdown clock
+var user = prompt("Enter your name");
+var playerName = document.getElementById('player');
+playerName.innerHTML = user;
 
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;

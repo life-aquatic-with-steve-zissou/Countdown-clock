@@ -92,5 +92,12 @@ body{
 .box-left p {
     text-align: center;
     color: deepskyblue;
-
+}
+.box-right p {
+    color: deepskyblue;
+}
+#player{
+    text-align: center;
+    color: white;
+    text-decoration: underline deepskyblue;
 }
