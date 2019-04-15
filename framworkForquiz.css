@@ -1,6 +1,6 @@
 
 body{
-    background-color: darkslategrey;
+    background-color: black;
 }
 .mountain img{
     height: 80%;
@@ -12,8 +12,9 @@ body{
     background-color: deepskyblue;
 
 }
-
-
+.Countdown{
+    color: deepskyblue;
+}
 .count_down_bar{
     border: solid white 2px;
     background-color: red;
@@ -40,6 +41,7 @@ body{
 .topTimer{
     font-family: 'Orbitron', sans-serif;
     font-size: 5rem;
+    background-color: black;
     border: 1px deepskyblue solid;
     margin-bottom: 2%;
 }
@@ -53,4 +55,29 @@ body{
     width: 1%;
     height: 30px;
     background-color: red;
+}
+
+.box-right{
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 10.5%;
+    right: 5%;
+    border: 1px deepskyblue solid;
+}
+.box-left{
+    height: 15%;
+    width: 15%;
+    position: absolute;
+    top: 10.5%;
+    left: 5%;
+    border: 1px deepskyblue solid;
+}
+.box-center{
+    height: 15%;
+    width: 50%;
+    position: absolute;
+    top: 10.5%;
+    left: 25%;
+    border: 1px deepskyblue solid;
 }

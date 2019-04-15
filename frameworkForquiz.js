@@ -19,7 +19,7 @@ function startTimer(duration, display) {
 function move() {
     var elem = document.getElementById("myBar");
     var width = 1;
-    var id = setInterval(frame, 1200);
+    var id = setInterval(frame, 1215);
     function frame() {
         if (width >= 100) {
             clearInterval(id);

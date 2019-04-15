@@ -21,27 +21,27 @@
 
     <!-- The parent div below is the container that will hold the count down timer and bar -->
 
-    <div class="Countdown bg-dark text-center text-white w-100  mb-0 p-3">
+    <div class="Countdown text-center w-100  mb-0 p-3">
         <!--timer goes under here make sure to rename class to clock-font if element changes -->
-        <div class="topTimer">
+        <div class="shadow-lg topTimer">
             <span id="time">02:00</span>
         </div>
         <!--countdown bar below-->
         <div class="row count_down_bar mx-auto text-center">
-            <div id="myProgress">
+            <div class="shadow-lg" id="myProgress">
                 <div id="myBar"></div>
             </div>
         </div>
         <br>
-        <button id="gameStart" class="btn btn-primary" onclick="startTimer(); move(); this.disabled = true;">Start Game</button>
+        <button id="gameStart" class="btn btn-lg btn-primary" onclick="startTimer(); move(); this.disabled = true;">Start Game</button>
     </div>
 
     <!-- This div is for the animated character and game enviorment -->
 
     <div class="canvas mx-5 mt-0">
-        <div class="player-lives">
+        <!--<div class="player-lives">
             3/3 <img src="https://cdn3.iconfinder.com/data/icons/line/36/person_add-512.png" alt="life">
-        </div>
+        </div>-->
         <div class="mountain">
             <img src="Mountain.png" alt="Mountain"/>
         </div>
@@ -54,6 +54,10 @@
             <h1 class="p-5">Insert quiz or ABCD buttons</h1>
         </div>
     </div>
+    <!--The divs below are just for styling and are the boxes in the Countdown bar-->
+    <div class="box-left shadow-lg"></div>
+    <div class="box-center shadow-lg"></div>
+    <div class="box-right shadow-lg"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
