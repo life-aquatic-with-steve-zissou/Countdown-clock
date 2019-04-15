@@ -15,6 +15,8 @@ body{
 }
 .Countdown{
     color: deepskyblue;
+    border-bottom: deepskyblue solid 1px;
+    margin-bottom: 0;
 }
 .count_down_bar{
     border: solid white 2px;
@@ -38,6 +40,11 @@ body{
     height: 30%;
     width: 30%;
     padding-bottom: 9%;
+}
+/* add this class to each image to take a life away when they answer incorrectly*/
+.lose-life{
+    transition: ease 2s;
+    visibility: hidden;
 }
 .topTimer{
     font-family: 'Orbitron', sans-serif;
@@ -100,4 +107,39 @@ body{
     text-align: center;
     color: white;
     text-decoration: underline deepskyblue;
+}
+
+#mario{
+    height: 8%;
+    width: 8%;
+    position: absolute;
+    top: 39%;
+    left: 10%;
+}
+#yeti{
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 37%;
+    left: -20%;
+}
+.fly{
+    animation:fly 5s linear 60;
+}
+@keyframes fly{
+    0%{
+        transform:translate(0%,0%) scale(1);
+    }
+    25%{
+        transform:translate(250%, 0%) scale(1);
+    }
+    50%{
+        transform:translate(500%, 0%) scale(1);
+    }
+    75%{
+        transform:translate(750%, 0%) scale(1);
+    }
+    100% {
+        transform: translate(1000%, 0%) scale(1);
+    }
 }
