@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameBackground</title>
+    <style>
+        main{
+            width:2000px;
+            height: 2000px;
+        }
+        .gameArea{
+            position: relative;
+            top: 20%;
+            height: 75%;
+            width: 100%;
+            background-color: deepskyblue;
+        }
+        .mountain{
+            position: absolute;
+            top: 34%;
+            height: 66%;
+            width: 100%;
+            background-image: url("Mountain.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .clouds img{
+            height: 100%;
+            width: 100%;
+        }
+        .left{
+            height: 50%;
+            width: 70%;
+            right: 31%;
+            z-index: 10;
+
+        }
+        .right{
+            height: 30%;
+            width: 50%;
+            bottom: 65%;
+            right: -2%;
+            z-index: 0;
+            transform: scaleX(-1);
+        }
+        .clouds{
+            position: absolute;
+        }
+
+        }
+        .right img{
+            position: absolute;
+            top: 10%;
+            right: -136%;
+            transform: scaleX(-1);
+            z-index: 1;
+        }
+        .birds {
+            height: 20%;
+            width: 30%;
+            z-index: 5;
+            transform: scaleX(-1);
+        }
+        .fly{
+            animation:fly 15s linear 60;
+        }
+        @keyframes fly{
+            0%{
+                transform:translate(2000px,0px) scale(5);
+            }
+            10%{
+                transform:translate(1600px, 0px) scale(4);
+            }
+            20%{
+                transform:translate(1200px,0px) scale(3);
+            }
+            30%{
+                transform:translate(800px,0px) scale(2);
+            }
+            40% {
+                transform: translate(400px, 0px) scale(1);
+            }
+            50% {
+                transform: translate(200px, 0px) scale(0);
+            }
+        }
+
+        </style>
+</head>
+<body>
+    <main>
+        <div class="gameArea">
+            <div class="mountain">
+            </div>
+            <div class="clouds left">
+                <img src="clouds.png" alt="leftCloud">
+            </div>
+            <div class="clouds right">
+                <img src="clouds.png" alt="rightCloud">
+            </div>
+            <div class="birds fly">
+                <img src="birds.gif" alt="birds">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

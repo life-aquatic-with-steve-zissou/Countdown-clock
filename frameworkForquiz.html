@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="framworkForquiz.css">
+    <!-- font for timer -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <title>Quiz Project</title>
+</head>
+<body>
+
+    <!-- This section is for the game title -->
+
+    <h1 class="bg-primary text-white text-center mb-0">Quiz Game Name Here</h1>
+
+    <!-- The parent div below is the container that will hold the count down timer and bar -->
+
+    <div class="Countdown text-center w-100  mb-0 p-3">
+        <!--timer goes under here make sure to rename class to clock-font if element changes -->
+        <div class="shadow-lg topTimer">
+            <span id="time">02:00</span>
+        </div>
+        <!--countdown bar below-->
+        <div class="row count_down_bar mx-auto text-center">
+            <div class="shadow-lg" id="myProgress">
+                <div id="myBar"></div>
+            </div>
+        </div>
+        <!--Start button disables after click//////Restart button reloads page-->
+        <button id="gameStart" class="btn btn-lg btn-primary mt-2 mb-5" onclick="startTimer(); move(); this.disabled = true;">Start Game</button>
+        <button id="restart" class="btn btn-lg btn-danger mt-2 mb-5" >Restart Game</button>
+        <img id="mario" class="fly" src="https://i.imgur.com/QGo5isT.gif" alt="mario">
+        <img id="yeti" class="fly" src="yeti-1.gif" alt="yeti">
+    </div>
+
+    <!-- This div is for the animated character and game environment -->
+
+    <div class="canvas mx-5 mt-0">
+        <!--<div class="player-lives">
+            3/3 <img src="https://cdn3.iconfinder.com/data/icons/line/36/person_add-512.png" alt="life">
+        </div>-->
+        <div class="mountain">
+            <img class="shadow-lg" src="Mountain.png" alt="Mountain"/>
+        </div>
+    </div>
+
+    <!-- This bottom half will contain the quiz questions -->
+
+    <div class="bottom bg-primary text-white text-center">
+        <div>
+            <h1 class="p-5">Insert quiz or ABCD buttons</h1>
+        </div>
+    </div>
+    <!--The divs below are just for styling and are the boxes in the Countdown bar-->
+    <div class="box-left shadow-lg">
+        <p>Lives</p>
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <img src="https://i.gifer.com/410D.gif" alt="heart">
+        <p class="pt-2">
+            <!--add a function to change the innerText when an answer is wrong-->
+            <span id="totalLives">3</span>/3
+        </p>
+    </div>
+    <div class="box-center shadow-lg">
+
+    </div>
+    <div class="box-right shadow-lg">
+    <p>Player Name:</p>
+        <p id="player">User Name</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="frameworkForquiz.js"></script>
+</body>
+</html>

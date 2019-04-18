@@ -1,0 +1,45 @@
+body{
+    width: 700px;
+    height: 1000px;
+    margin: 0;
+}
+.topTimer{
+    width: 100%;
+    height: 20%;
+    font-size: 40px;
+    color: white;
+    background-color: red;
+    margin: 0;
+    position: relative;
+}
+.timerText{
+    width: 80%;
+    border: solid white 2px;
+    text-align: center;
+    background-color: black;
+}
+.bounce{
+    animation:bounce 5s linear 80;
+}
+@keyframes bounce{
+    0%{
+        transform:translate(0px,0px);
+
+    }
+    25%{
+        transform:translate(100px,100px);
+
+    }
+    50%{
+        transform:translate(0px,100px);
+
+    }
+    75%{
+        transform:translate(100px,-0px);
+
+    }
+    100% {
+        transform: translate(0px, 0px);
+
+    }
+}
