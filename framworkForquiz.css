@@ -1,6 +1,9 @@
 
 body{
-    background-color: black;
+    background-color: lightskyblue;
+}
+li{
+    list-style: none;
 }
 .mountain img{
     height: 80%;
@@ -10,19 +13,19 @@ body{
 
 .canvas{
     background-color: white;
-    border: solid deepskyblue 1px;
+    border: solid lightskyblue 1px;
 
 }
 .Countdown{
-    color: deepskyblue;
-    border-bottom: deepskyblue solid 1px;
+    color: lightskyblue;
+    border-bottom: lightskyblue solid 1px;
     margin-bottom: 0;
 }
-.count_down_bar{
-    border: solid white 2px;
-    background-color: red;
-    width: 75%;
-}
+/*.count_down_bar{*/
+    /*border: solid white 2px;*/
+    /*background-color: red;*/
+    /*width: 75%;*/
+/*}*/
 .countdown-text{
     margin-left: 40%;
 }
@@ -34,6 +37,7 @@ body{
     width: 15%;
     position: absolute;
     top: 10%;
+
 }
 .player-lives img{
     margin-left: 5%;
@@ -49,14 +53,14 @@ body{
 .topTimer{
     font-family: 'Orbitron', sans-serif;
     font-size: 5rem;
-    background-color: black;
-    border: 1px deepskyblue solid;
+    background-color: lightskyblue;
+    border: 1px lightskyblue solid;
     margin-bottom: 2%;
 }
 
 #myProgress {
     width: 100%;
-    background-color: black;
+    background-color: lightskyblue;
 }
 
 #myBar {
@@ -71,7 +75,7 @@ body{
     position: absolute;
     top:9.3%;
     right: 5%;
-    border: 1px deepskyblue solid;
+    border: 1px lightskyblue solid;
 }
 .box-left{
     height: 15%;
@@ -79,7 +83,7 @@ body{
     position: absolute;
     top: 9.3%;
     left: 5%;
-    border: 1px deepskyblue solid;
+    border: 1px lightskyblue solid;
 }
 .box-center{
     height: 15%;
@@ -87,7 +91,7 @@ body{
     position: absolute;
     top: 9.3%;
     left: 25%;
-    border: 1px deepskyblue solid;
+    border: 1px lightskyblue solid;
 }
 .box-left img {
     height: 30%;
@@ -98,15 +102,15 @@ body{
 }
 .box-left p {
     text-align: center;
-    color: deepskyblue;
+    color: lightskyblue;
 }
 .box-right p {
-    color: deepskyblue;
+    color: lightskyblue;
 }
 #player{
     text-align: center;
     color: white;
-    text-decoration: underline deepskyblue;
+    text-decoration: underline lightskyblueskyblue;
 }
 
 #mario{

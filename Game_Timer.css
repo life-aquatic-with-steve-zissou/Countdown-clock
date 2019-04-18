@@ -16,7 +16,7 @@ body{
     width: 80%;
     border: solid white 2px;
     text-align: center;
-    background-color: black;
+    background-color: lightskyblue;
 }
 .bounce{
     animation:bounce 5s linear 80;
