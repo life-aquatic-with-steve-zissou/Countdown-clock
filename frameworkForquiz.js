@@ -1,7 +1,7 @@
 //PlayerName feature below commented out for now
-//var user = prompt("Enter your name");
-//var playerName = document.getElementById('player');
-//playerName.innerHTML = user;
+var user = prompt("Enter your name");
+var playerName = document.getElementById('player');
+playerName.innerHTML = user;
 //restart variable and function below
 var resetbtn = document.getElementById('restart');
 
